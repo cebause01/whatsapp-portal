@@ -23,8 +23,9 @@
       <p class="tagline">Send us a message on WhatsApp</p>
 
       <a
+        id="whatsapp-btn"
         class="whatsapp-btn"
-        href="https://api.whatsapp.com/send/?phone=60192794460&text=tiong3e&type=phone_number&app_absent=0"
+        href="#"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -37,5 +38,20 @@
       <p class="hint">Opens WhatsApp with a pre-filled message</p>
     </div>
   </main>
+
+  <script>
+    const PHONE = "60192794460";
+    const DEFAULT_MESSAGE = "tiong3e";
+
+    const params = new URLSearchParams(window.location.search);
+    const message = params.get("text") || params.get("msg") || DEFAULT_MESSAGE;
+
+    const whatsappUrl =
+      "https://api.whatsapp.com/send/?phone=" + PHONE +
+      "&text=" + encodeURIComponent(message) +
+      "&type=phone_number&app_absent=0";
+
+    document.getElementById("whatsapp-btn").href = whatsappUrl;
+  </script>
 </body>
 </html>

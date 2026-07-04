@@ -18,10 +18,23 @@ npx serve .
 
 After deploy, put your site URL (e.g. `https://yourname.netlify.app`) on Facebook.
 
+## Different message per post
+
+Add `?text=` to your link. Each post can use a different starting message:
+
+| Link | WhatsApp opens with |
+|------|---------------------|
+| `https://ws.cebause.one` | `tiong3e` (default) |
+| `https://ws.cebause.one?text=tiong3e` | `tiong3e` |
+| `https://ws.cebause.one?text=product123` | `product123` |
+| `https://ws.cebause.one?text=Hi%20from%20Facebook` | `Hi from Facebook` |
+
+You can also use `?msg=` instead of `?text=`.
+
 ## Customize
 
 Edit `index.html`:
 
 - **Name** — change `Zulkifli` to your display name
-- **WhatsApp link** — update the `href` on the button
-- **Pre-filled message** — change `text=tiong3e` in the URL
+- **Default message** — change `DEFAULT_MESSAGE` in the script
+- **Phone number** — change `PHONE` in the script
