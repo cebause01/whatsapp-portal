@@ -16,7 +16,7 @@ npx serve .
 2. **GitHub Pages** — push to GitHub, enable Pages from the repo settings
 3. **Vercel** — import the folder at [vercel.com](https://vercel.com)
 
-After deploy, put your site URL (e.g. `https://yourname.netlify.app`) on Facebook.
+After deploy, put your site URL (e.g. `https://cebause.one/whatsapp`) on Facebook.
 
 ## Different message per post
 
@@ -24,10 +24,10 @@ Add `?text=` to your link. Each post can use a different starting message:
 
 | Link | WhatsApp opens with |
 |------|---------------------|
-| `https://ws.cebause.one` | `tiong3e` (default) |
-| `https://ws.cebause.one?text=tiong3e` | `tiong3e` |
-| `https://ws.cebause.one?text=product123` | `product123` |
-| `https://ws.cebause.one?text=Hi%20from%20Facebook` | `Hi from Facebook` |
+| `https://cebause.one/whatsapp` | `tiong3e` (default) |
+| `https://cebause.one/whatsapp?text=tiong3e` | `tiong3e` |
+| `https://cebause.one/whatsapp?text=product123` | `product123` |
+| `https://cebause.one/whatsapp?text=Hi%20from%20Facebook` | `Hi from Facebook` |
 
 You can also use `?msg=` instead of `?text=`.
 
